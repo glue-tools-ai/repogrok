@@ -1,0 +1,16 @@
+{
+  "name": "repogrok",
+  "version": "0.1.0",
+  "description": "Pack your entire codebase into a single AI-friendly file",
+  "type": "module",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "author": "Glue <hello@getglueapp.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glue-tools-ai/repogrok"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
