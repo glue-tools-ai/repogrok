@@ -1,6 +1,6 @@
 {
   "name": "repogrok",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Pack your entire codebase into a single AI-friendly file. Feed your repo to Claude, ChatGPT, Gemini, and other LLMs with cost estimation and built-in prompt templates.",
   "type": "module",
   "main": "./src/index.js",
