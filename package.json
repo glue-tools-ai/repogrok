@@ -1,0 +1,44 @@
+{
+  "name": "repogrok",
+  "version": "1.0.0",
+  "description": "Pack your entire codebase into a single AI-friendly file. Feed your repo to Claude, ChatGPT, Gemini, and other LLMs with cost estimation and built-in prompt templates.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "repogrok": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "ai", "llm", "codebase", "repository", "pack", "claude", "chatgpt", "gpt",
+    "gemini", "deepseek", "code-analysis", "developer-tools", "cli", "context-window",
+    "token-count", "code-review", "repomix", "ai-tools", "prompt-engineering"
+  ],
+  "author": "Glue <hello@getglueapp.com>",
+  "license": "MIT",
+  "homepage": "https://getglueapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glue-tools-ai/repogrok"
+  },
+  "bugs": {
+    "url": "https://github.com/glue-tools-ai/repogrok/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "clipboardy": "^4.0.0",
+    "commander": "^12.0.0",
+    "globby": "^14.0.0",
+    "iconv-lite": "^0.6.3",
+    "isbinaryfile": "^5.0.0",
+    "ora": "^8.0.0",
+    "simple-git": "^3.22.0",
+    "strip-comments": "^2.0.1"
+  }
+}
