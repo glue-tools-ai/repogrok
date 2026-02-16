@@ -4,7 +4,7 @@ import { generateJson } from './jsonStyle.js';
 import { generatePlain } from './plainStyle.js';
 import { getPromptTemplate } from '../prompts/templates.js';
 
-export function generateOutput({ rootDir, files, directoryTree, gitDiff, gitLog, config }) {
+export function generateOutput({ rootDir, files, directoryTree, gitDiff, gitLog, config, languageStats, dependencyGraph, importanceRanking }) {
   const promptInstruction = config.prompt ? getPromptTemplate(config.prompt) : config.output.instruction || null;
 
   const data = {
@@ -17,6 +17,9 @@ export function generateOutput({ rootDir, files, directoryTree, gitDiff, gitLog,
     headerText: config.output.headerText || null,
     totalFiles: files.length,
     totalCharacters: files.reduce((sum, f) => sum + f.content.length, 0),
+    languageStats: languageStats || null,
+    dependencyGraph: dependencyGraph || null,
+    importanceRanking: importanceRanking || null,
   };
 
   switch (config.output.style) {
